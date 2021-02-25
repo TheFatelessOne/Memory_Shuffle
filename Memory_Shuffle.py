@@ -18,8 +18,8 @@ def clearing(delay):
         shutil.move(os.path.join(source, name), os.path.join(dst, name))
 
 
-source = '/Загрузочная'
-dst = '/old'
+source = 'path_to_source_dir'
+dst = 'path_to_conditionary_nfs_storage'
 delay = 90
 clearing(delay)
 usage = psutil.disk_usage(source)
