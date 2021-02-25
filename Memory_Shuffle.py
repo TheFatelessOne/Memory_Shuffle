@@ -14,7 +14,7 @@ def clearing(delay):
     max_time -= timedelta(days=delay)
     max_time = mktime(max_time.timetuple()) 
     for name in old_files(source, max_time):
-        new_name = os.path.join(dst, os.path.relpath(name, source))
+        #new_name = os.path.join(dst, os.path.relpath(name, source))
         shutil.move(os.path.join(source, name), os.path.join(dst, name))
 
 
